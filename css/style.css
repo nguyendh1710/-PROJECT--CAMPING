@@ -1,0 +1,265 @@
+/* reset css  */
+*{
+    /* loại bỏ cài đặt có sẵn trên trình duyệt để thiết lập css theo ý minh như bên dưới */
+    padding:0;
+    margin:0;
+}
+
+/* xóa đi sự ảnh huorng từ thuộc tính float bên dưới  */
+.clear{
+    clear: both;
+}
+
+/* body  */
+body{
+    background-color: #f0e3e0;
+}
+
+/* header  */
+.header{
+    background-color: #f8e1db;
+    padding: 20px 0 5px 60px;
+}
+
+/* header__nav */
+.header .header__nav ul{
+    /* loai bo dau cham tron (chinh tren ul) */
+    list-style: none;
+   
+}
+.header .header__nav ul li {
+     /* chinh noi dung nam tren cung 1 dong ( chinh trong li) */
+     display: inline;
+     margin: 0 20px 0 0;
+}
+
+.header .header__nav ul li a{
+     /* the a gan link co dau gach chan-> nen muon loai bo dau gach chan phai vao the a  */
+    text-decoration: none;
+    color: black;
+}
+
+
+/* banner  */
+.banner{
+    background-image: url(./../img/BG.png);
+    height: 100vh;
+    /* chỉnh ảnh nằm sao co đẹp dùng background-size  */
+    background-size: cover;
+    background-position: center;
+}
+
+/* explore  */
+
+
+.explore .explore__title{
+    text-align: center;
+}
+
+.explore .explore__title h2{
+    color:#8d8d8d;
+}
+
+.explore{
+    padding: 60px 0;
+    background-color:hsl(15, 70%, 84%) ;
+}
+
+.explore .explore__content .content__item{
+    float: left;
+    width: 25%;
+    /* background-color: aquamarine; */
+    /* chiều dài phần tử html= width chiều dài + padding trái + padding phải + độ dày đường viền 
+    25% + 20px + 20px= */
+    /* box-model: 25% = độ dài content + padding trái + padding phải + độ dày đường viền  */
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.explore .explore__content .content__item .content__item__bg{
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 30px;  
+}
+
+.content__item .content__item__bg img{
+    width: 100%;
+    border-radius: 30px;
+}
+
+.content__item .content__item__bg h3{
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.content__item .content__item__bg p{
+    color:#8d8d8d;
+    line-height: 1.5;
+}
+
+.content__item .content__item__bg button{
+    background-color:#c4c1c1;
+    color:#5a5858;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+ /* di chuyen trai tim den diem bat ky 
+ buoc 1:xac dinh the cha chua doi tuong muon di chuyen xung quanh dung thuoc tinh relative*/
+.content__item .content__item__bg{
+    position: relative;
+}
+.content__item .content__item__bg .bg__icon i{
+    /* di chuyen trai tim den diem bat ky 
+    buoc 2: den doi tuong con muon di chuyen dung thuoc tinh absolute va cac gia tri right left top bottom tuy chinh vi tri */
+       color: red;
+       
+   }
+
+.content__item .content__item__bg .bg__icon{
+    position: absolute;
+    top: 50px; 
+    right:50px;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    /* muon noi dung nam giua so voi o vuong ta dung line-height truyen gia tri bang width va height  */
+    line-height: 50px;
+    border-radius: 10px;
+    opacity: 0.6;
+}
+
+.explore .explore__content .content__viewall{
+    margin: 30px 0 0 675px;
+    padding: 10px 60px;
+    background-color: #F3C8BA;
+    color: #ff7700;
+    border-color: #ff7700;
+    border-radius: 40px;
+}
+
+/* contact  */
+.contact{
+    background-color:#F3C8BA;
+    position: relative;
+    border-radius: 0 30px 30px 0;
+
+}
+
+/* .contact .contact__cover{
+    background-color:#F3C8BA;
+    height: 300px;
+
+} */
+ 
+/* contact__bg  */
+.contact__bg{
+    /* position: relative; */
+    margin: 70px 0;
+}
+
+.contact .contact__bg .contact__bg__mask{
+    margin-left: -400px;
+ }
+
+ .contact .contact__bg .contact__bg__homeicon{
+    position: absolute;
+    bottom: 20px;
+    left: 60px;
+ }
+
+
+/* contact__content  */
+.contact__content{
+    position: absolute;
+    right: 150px;
+    top: 80px;
+}
+
+.contact .contact__content h1{
+    color:#797979;
+}
+
+.contact .contact__content p{
+    color:#797979;
+    margin: 20px 0;
+}
+
+
+.contact .contact__content h3{
+    display: inline;
+    margin-right: 150px;
+    color:#797979;
+}
+
+.contact .content__social img{
+    margin: 20px 5px 0 0;
+}
+
+.contact .content__social i{ 
+    display: inline;
+    color: #ec9345;
+    margin: 0 10px 100px 0;
+}
+
+.content__social .social__bg__icon {
+    position: absolute;
+    top: 160px;
+    right: 120px;
+}
+
+
+
+/* footer  */
+.footer {
+    background-color: #f3c8ba;
+    
+}
+
+/* footer__cover  */
+.footer .footer__cover{
+    position: relative;
+}
+
+/* footer__content  */
+.footer .footer__content{
+    float:left;
+    width: 50% 25%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin: 70px 40px 30px 30px;
+}
+
+.footer .footer__content h3{
+    padding: 20px 0;
+   
+}
+
+.footer .footer__content p{
+    line-height: 2;
+}
+
+.footer .footer__content ul li{
+    list-style: none;
+}
+
+.footer .footer__content ul li a{
+    text-decoration: none;
+    color:black;
+    line-height: 2;
+}
+
+
+/* footer__final  */
+.footer .footer__final {
+    text-align: center;
+    padding-bottom: 50px;
+    border-top-right-radius: 30px;
+}
+.footer .footer__final p{
+    display: inline-block;
+}
